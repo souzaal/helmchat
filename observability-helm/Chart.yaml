@@ -1,0 +1,19 @@
+apiVersion: v2
+name: observability
+version: 0.1.0
+appVersion: "1.0"
+description: Umbrella Helm chart for a small Kubernetes observability lab
+type: application
+dependencies:
+  - name: prometheus
+    version: ">=27.0.0 <28.0.0"
+    repository: https://prometheus-community.github.io/helm-charts
+  - name: grafana
+    version: ">=10.0.0 <11.0.0"
+    repository: https://grafana.github.io/helm-charts
+  - name: loki
+    version: ">=6.0.0 <7.0.0"
+    repository: https://grafana.github.io/helm-charts
+  - name: promtail
+    version: ">=6.0.0 <7.0.0"
+    repository: https://grafana.github.io/helm-charts
